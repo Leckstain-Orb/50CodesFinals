@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int number;
+
+	cout << "Enter an integer number between 1 & 99999: ";
+	cin >> number;
+
+	if (number >= 10000 && number <= 99999)
+	{
+		cout << "its a five digit number!";
+	}
+	else if (number >= 1000 && number <= 9999)
+	{
+		cout << "Its a four digit number!";
+	}
+	else if (number >= 100 && number <= 999)
+	{
+		cout << "Its a three digit number!";
+	}
+	else if (number >= 10 && number <= 99)
+	{
+		cout << "Its a two digit number!";
+	}
+	else
+	{
+		cout << "its a single digit number!";
+	}
+	
+	_getch();
+
+	return 0;
+
+}
