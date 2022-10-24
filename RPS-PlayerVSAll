@@ -1,0 +1,101 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <string>
+
+int main(int argc, char *argv[]){
+
+
+    int playerChoice;
+    int aiChoice;
+    unsigned int seed;
+
+
+    std::cout << "Jack N Poy aka Rock, Paper, Scissors Game"  << std::endl;
+    std::cout << std::endl;
+    std::cout << "************|Player versus AI|************" << std::endl;
+    std::cout << std::endl;
+
+    do{
+        std::cout << std::endl;
+        std::cout << "MAIN MENU"   << std::endl;
+        std::cout << std::endl;
+        std::cout << "1. Rock"     << std::endl;
+        std::cout << "2. Paper"    << std::endl;
+        std::cout << "3. Scissors" << std::endl;
+        std::cout << "4. Terminate Game" << std::endl;
+        std::cout << std::endl;
+        std::cout << "Please select from the options above: ";
+        std::cin >> playerChoice;
+
+        switch(playerChoice){
+
+            case 1:
+                std::cout << "Player: Rock!" << std::endl;
+                break;
+            case 2:
+                std::cout << "Player: Paper!" << std::endl;
+                break;
+            case 3:
+                std::cout << "Player: Scissor!" << std::endl;
+                break;
+            default:
+                std::cout << "Player: Invalid selection!" << std::endl;
+        }
+
+        seed = time(0);
+        srand(seed);
+        aiChoice = rand() % 3 + 1;
+
+        switch(aiChoice){
+
+            case 1:
+                std::cout << "AI: Rock!" << std::endl;
+                break;
+            case 2:
+                std::cout << "AI: Paper!" << std::endl;
+                break;
+            case 3:
+                std::cout << "AI: Scissor!" << std::endl;
+                break;
+        }
+if(playerChoice == aiChoice){
+        std::cout << std::endl;
+        std::cout << "It's a draw!" << std::endl;
+    }
+    else if(playerChoice == 1 && aiChoice == 2){
+        std::cout << std::endl;
+        std::cout << "AI wins!" << std::endl;
+    }
+    else if(playerChoice == 1 && aiChoice == 3){
+        std::cout << std::endl;
+        std::cout << "Player wins!" << std::endl;
+    }
+    else if(playerChoice == 2 && aiChoice == 1){
+        std::cout << std::endl;
+        std::cout << "Player wins!" << std::endl;
+    }
+    else if(playerChoice == 2 && aiChoice == 3){
+        std::cout << std::endl;
+        std::cout << "AI wins!" << std::endl;
+    }
+    else if(playerChoice == 3 && aiChoice == 1){
+        std::cout << std::endl;
+        std::cout << "AI wins!" << std::endl;
+    }
+    else if(playerChoice == 3 && aiChoice == 2){
+        std::cout << std::endl;
+        std::cout << "Player wins!" << std::endl;
+    }
+    else{
+        std::cout << std::endl;
+        std::cout << "Condition not met!" << std::endl;
+    }
+
+    }while(playerChoice!=4);
+
+    std::cout << std::endl;
+    std::cout << "Thanks for playing!" << std::endl;
+
+    return 0;
+}
