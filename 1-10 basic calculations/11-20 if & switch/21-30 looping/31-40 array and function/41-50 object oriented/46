@@ -1,4 +1,4 @@
-/*  C++ program to Count number of times a function is called  */
+/*  C++ program to Count number of times a function is called object */
 
 #include<iostream>
 using namespace std;
