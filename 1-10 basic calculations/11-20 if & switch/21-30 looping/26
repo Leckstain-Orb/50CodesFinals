@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int num,i;
+    long long fact=1;
+ 
+    //Reading a number from user
+    cout<<"Enter any number to calculate factorial:";
+    cin>>num;
+ 
+    fact = 1;
+    i = 1;
+ 
+    //Run loop from 1 to number entered by user
+    while(i <= num)
+    {
+        fact = fact * i;
+        i++;
+    }
+ 
+    cout<<"Factorial of "<<num <<" is: "<<fact; ;
+ 
+    return 0;
+}
