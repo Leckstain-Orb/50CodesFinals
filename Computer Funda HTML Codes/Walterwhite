@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Kanade"/>
+        <meta name-"description" content="This is my Act. 7 for ComFun. "/>
+        <title> Six Fast Facts</title>
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+
+        <style>html {
+font-size: 25px
+}
+        body{
+            background-color: rgba(255, 247, 140, 0.986);
+            color: rgb(0,0,0);
+        }
+        
+        a {
+            color: rgb(7, 2, 255);
+        }
+        a:visited {
+            color: rgb(0, 173, 216);
+        }
+        </style>
+    </head>
+    
+    <body>
+
+        <h1 style="color:red"> Six Facts About Mr. Benjamin</h1>
+
+        <br>
+
+        <p>My name is <b>Benjamin</b></p>
+        <p>My Favourite color is <b>Silver</b></p>
+        <p>My Favourite Food is <b>Sinigang</b></p>
+        <p>My Favourite TV Show is <b>JOJO'S BIZZARE ADVENTURE</b></p>
+        <p>My Favourite Website is <a href="https://google.com/" target="_blank">Google</a></p>
+        <p>My Email Address is <a href="mailto:ghoqr127@gmail.com">ghoqr127@gmail.com</a></p>
+
+        <img src="https://cdn.discordapp.com/attachments/979508713377374268/1034552957896769586/Screenshot_20221012-160740_Chrome.png"
+    </body>
+</html>
