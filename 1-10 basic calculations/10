@@ -1,24 +1,22 @@
-/*  C++ Program to Find whether given Number is Odd or Even  */
+/*  C++ Program to raise any number X to power N  */
 
 #include<iostream>
-
+#include<math.h>   //for pow() function
 using namespace std;
 
 int main()
 {
-    int a;
-    cout<<"Enter any positive number :: ";
-    cin>>a;
 
-    if(a%2==0)
-    {
-       cout<<"\nThe Entered Number [ "<<a<<" ] is EVEN Number.\n";
-    }
+    int x,n,result;
 
-    else
-    {
-        cout<<"\nThe Entered Number [ "<<a<<" ] is ODD Number.\n";
-    }
+    cout<<"Enter value of X :: ";
+    cin>>x;
+    cout<<"\nEnter value of N :: ";
+    cin>>n;
+
+    result=pow(x,n);
+
+    cout<<"\nThe Power of Number [ "<<x<<" ^ "<<n<<" ] = "<<result<<"\n";
 
     return 0;
 }
